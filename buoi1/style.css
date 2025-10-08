@@ -1,0 +1,52 @@
+/* Đảm bảo các phần tử HTML không có padding/margin mặc định */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng khu vực header */
+#header-area {
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+}
+
+/* Định dạng khu vực chứa bản đồ */
+/* HEIGHT là BẮT BUỘC để Leaflet hoạt động */
+#map {
+    height: 1200px; 
+    width: 100%;
+}
+
+/* Định dạng khu vực footer */
+#footer-area {
+    height: 30px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.8em;
+}
+/* style.css */
+
+/* ... (Các định dạng #header-area, #map-container, #footer-area giữ nguyên) ... */
+
+/* ĐỊNH DẠNG POPUP TÙY CHỈNH */
+/* style.css (Đoạn CSS cần thiết) */
+.custom .leaflet-popup-content-wrapper {
+    background: rgba(50, 40, 5, 0.9); 
+    color: #ffffff; 
+    border-radius: 10px;
+}
+
+.custom .leaflet-popup-tip {
+    background: rgba(50, 40, 5, 0.9);
+}
+
+/* Định dạng tiêu đề bên trong popup */
+.custom .leaflet-popup-content h4 {
+    color: #ffffff; /* Đảm bảo tiêu đề cũng có màu trắng */
+}
